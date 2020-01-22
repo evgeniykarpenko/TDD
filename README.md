@@ -10,6 +10,6 @@ my work on tasks from the book by Kent Beck TDD
 8. Равеснство null
 9. Равенство объектов
 10. Дублировние Dollar/Franc
-11. Общие операции equals()
+11. **~~Общие операции equals()~~**
 12. Общие операции times()
 13. Сравнение франков и долларов
