@@ -7,7 +7,7 @@ public class Dollar extends Money {
         this.amount = amount;
     }
 
-    Dollar times(int multiplayer) {
+    Money times(int multiplayer) {
         return new Dollar(amount * multiplayer);
     }
 
