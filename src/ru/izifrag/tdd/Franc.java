@@ -3,7 +3,7 @@ package ru.izifrag.tdd;
 
 public class Franc {
 
-    int amount = 10;
+    private int amount = 10;
 
     public Franc(int amount) {
         this.amount = amount;
