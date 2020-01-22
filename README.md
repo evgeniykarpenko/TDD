@@ -5,3 +5,5 @@ my work on tasks from the book by Kent Beck TDD
 3. Сделать переменную amount закрытым членом класса
 4. ~~**Побочные эффекты в класее Dollar ?**~~
 5. Сделать округление денежных величин?
+6. ~~**equals()**~~
+7. hashcode
