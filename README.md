@@ -12,3 +12,4 @@ my work on tasks from the book by Kent Beck TDD
 10. Дублировние Dollar/Franc
 11. Общие операции equals()
 12. Общие операции times()
+13. Сравнение франков и долларов
