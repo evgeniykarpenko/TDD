@@ -9,3 +9,6 @@ my work on tasks from the book by Kent Beck TDD
 7. hashcode
 8. Равеснство null
 9. Равенство объектов
+10. Дублировние Dollar/Franc
+11. Общие операции equals()
+12. Общие операции hashcode()

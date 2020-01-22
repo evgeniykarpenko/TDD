@@ -1,11 +1,11 @@
 package ru.izifrag.tdd;
 
 
-public class Dollar {
+public class Franc {
 
     int amount = 10;
 
-    public Dollar(int amount) {
+    public Franc(int amount) {
         this.amount = amount;
     }
 
