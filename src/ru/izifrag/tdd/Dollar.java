@@ -10,8 +10,7 @@ public class Dollar {
     }
 
     Dollar times(int multiplayer) {
-        amount *= multiplayer;
-        return null;
+        return new Dollar(amount * multiplayer);
     }
 
     public boolean equals(Object object) {
