@@ -9,8 +9,9 @@ public class Dollar {
         this.amount = amount;
     }
 
-    void times (int multiplayer) {
+    Dollar times (int multiplayer) {
         amount *= multiplayer;
+        return null;
     }
 
     public static void main(String[] args) {
