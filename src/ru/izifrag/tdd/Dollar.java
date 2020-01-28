@@ -9,16 +9,4 @@ public class Dollar extends Money {
         super(amount, currency);
     }
 
-    Money times(int multiplayer) {
-        return Money.dollar(amount * multiplayer);
-    }
-
-    public static void main(String[] args) {
-
-    }
-
-    @Override
-    String currency() {
-        return currency;
-    }
 }

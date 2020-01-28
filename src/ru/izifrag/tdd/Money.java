@@ -1,11 +1,11 @@
 package ru.izifrag.tdd;
 
-public abstract class Money {
+public class Money {
 
     protected int amount;
     protected String currency;
 
-    String currency() {
+    protected String currency() {
         return currency;
     }
 
@@ -15,7 +15,7 @@ public abstract class Money {
     }
 
     static Dollar dollar(int amount) {
-        return new Dollar(amount,"USD");
+        return new Dollar(amount, "USD");
     }
 
     static Franc franc(int amount) {
@@ -25,9 +25,15 @@ public abstract class Money {
     public boolean equals(Object object) {
         Money money = (Money) object;
         return amount == money.amount
-                && getClass().equals(money.getClass());
+                && currency.equals(money.currency);
     }
 
-    abstract Money times(int multiplier);
+    Money times(int multiplier) {
+        return new Money(amount * multiplier, currency);
+    }
 
+    @Override
+    public String toString() {
+        return amount + " " + currency;
+    }
 }
