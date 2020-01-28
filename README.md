@@ -13,5 +13,5 @@ my work on tasks from the book by Kent Beck TDD
 11. **~~Общие операции equals()~~**
 12. Общие операции times()
 13. **~~Сравнение франков и долларов~~**
-14. Валюта ?
+14. ~~Валюта ?~~
 15. Нужен ли тест testFrancMultiplication() ?

@@ -3,16 +3,22 @@ package ru.izifrag.tdd;
 
 public class Franc extends Money {
 
-    public Franc(int amount) {
-        this.amount = amount;
+    private String currency;
+
+    Franc(int amount, String currency) {
+       super(amount, currency);
     }
 
-    Franc times(int multiplayer) {
-        return new Franc(amount * multiplayer);
+    Money times(int multiplayer) {
+        return Money.franc(amount * multiplayer);
     }
 
     public static void main(String[] args) {
 
     }
 
+    @Override
+    String currency() {
+        return currency;
+    }
 }
