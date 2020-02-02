@@ -15,3 +15,4 @@ my work on tasks from the book by Kent Beck TDD
 13. **~~Сравнение франков и долларов~~**
 14. ~~Валюта ?~~
 15. ~~Нужен ли тест testFrancMultiplication() ?~~
+16. $5 + $5 = $10
