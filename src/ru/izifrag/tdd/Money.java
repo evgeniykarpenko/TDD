@@ -1,6 +1,6 @@
 package ru.izifrag.tdd;
 
-public class Money implements Expression{
+public class Money implements Expression {
 
     protected int amount;
     protected String currency;
@@ -38,6 +38,10 @@ public class Money implements Expression{
     }
 
     Expression plus(Money addent) {
-        return new Money(amount + addent.amount, currency);
+        return new Sum(this, addent);
+    }
+
+    public Money reduce(String to) {
+        return this;
     }
 }

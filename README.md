@@ -16,3 +16,7 @@ my work on tasks from the book by Kent Beck TDD
 14. ~~Валюта ?~~
 15. ~~Нужен ли тест testFrancMultiplication() ?~~
 16. $5 + $5 = $10
+17. Операция $5 + $5 возвращает объект Money
+18. ~~Bank.reduce(Money)~~
+19. Приведение объекта Money с одновременной конверсией валют
+20. Reduce(Bank, String)
