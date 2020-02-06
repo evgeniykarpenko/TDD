@@ -1,7 +1,5 @@
 package ru.izifrag.tdd;
 
-import java.util.Objects;
-
 public class Money implements Expression {
 
     protected int amount;
@@ -30,7 +28,7 @@ public class Money implements Expression {
                 && currency.equals(money.currency);
     }
 
-    Money times(int multiplier) {
+    Expression times(int multiplier) {
         return new Money(amount * multiplier, currency);
     }
 
@@ -39,7 +37,7 @@ public class Money implements Expression {
         return amount + " " + currency;
     }
 
-    Expression plus(Money addent) {
+    public Expression plus(Expression addent) {
         return new Sum(this, addent);
     }
 
