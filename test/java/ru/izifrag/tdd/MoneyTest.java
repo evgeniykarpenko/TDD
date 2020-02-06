@@ -97,4 +97,5 @@ public class MoneyTest {
         assertEquals(Money.dollar(20), result);
     }
 
+    
 }
