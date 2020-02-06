@@ -20,5 +20,5 @@ my work on tasks from the book by Kent Beck TDD
 18. ~~Bank.reduce(Money)~~
 19. ~~Приведение объекта Money с одновременной конверсией валют~~
 20. ~~Reduce(Bank, String)~~
-21. Sum.plus
-22. Expression.times
+21. ~~Sum.plus~~
+22. ~~Expression.times~~
