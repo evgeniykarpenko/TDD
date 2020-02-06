@@ -35,6 +35,7 @@ public class MoneyTest {
         assertEquals(five, sum.augend);
         assertEquals(five, sum.addend);
     }
+
     @Test
     public void testSimpleAddition() {
         Money five = Money.dollar(5);
@@ -49,5 +50,18 @@ public class MoneyTest {
         Bank bank = new Bank();
         Money result = bank.reduce(Money.dollar(1), "USD");
         assertEquals(Money.dollar(1), result);
+    }
+
+    @Test
+    public void testReduceMoneyDifCurrency() {
+        Bank bank = new Bank();
+        bank.addRate("CHF", "USD", 2);
+        Money result = bank.reduce(Money.franc(2), "USD");
+        assertEquals(Money.dollar(1), result);
+    }
+
+    @Test
+    public void testIdentyRate() {
+        assertEquals(1, new Bank().rate("USD", "USD"));
     }
 }
